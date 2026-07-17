@@ -1,0 +1,60 @@
+<section class="contact" id="kontakt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Kontakt</p>
+      <h2>Sprechen Sie mit uns</h2>
+      <p>Ob Anfrage, Bewerbung oder Kooperation — wir melden uns zeitnah zurück.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-block">
+          <h3>Adresse</h3>
+          <address>BO-WERT GmbH<br>Im Dreieck 4–6<br>23758 Oldenburg in Holstein</address>
+        </div>
+        <div class="contact-block">
+          <h3>Telefon</h3>
+          <p><a href="tel:+4917643674595">0176 43674595</a></p>
+        </div>
+        <div class="contact-block">
+          <h3>E-Mail</h3>
+          <p><a href="mailto:steffen@kastian.de">steffen@kastian.de</a></p>
+        </div>
+        <div class="contact-block">
+          <h3>Öffnungszeiten</h3>
+          <p>Montag – Freitag: 7:00 – 14:00 Uhr</p>
+        </div>
+      </div>
+
+      <form id="contact-form" autocomplete="on">
+        <div class="form-row">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div>
+          <label for="betreff">Betreff</label>
+          <select id="betreff" name="betreff">
+            <option>Allgemeine Anfrage</option>
+            <option>Angebot Logistik / Transport</option>
+            <option>Recycling / Wertstoffe</option>
+            <option>Lagerung</option>
+            <option>Konfektionierung</option>
+            <option>Bewerbung / Karriere</option>
+          </select>
+        </div>
+        <div>
+          <label for="nachricht">Nachricht</label>
+          <textarea id="nachricht" name="nachricht" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="justify-self:start;">Nachricht senden</button>
+        <p class="form-note">Ihre Anfrage geht direkt an steffen@kastian.de.</p>
+        <p class="form-status" id="form-status"></p>
+      </form>
+    </div>
+  </div>
+</section>

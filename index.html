@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BO-WERT GmbH – Logistik, Recycling, Lager, Konfektionierung</title>
+<meta name="description" content="BO-WERT GmbH aus Oldenburg in Holstein: freie Lagerkapazitäten, Logistik, Kunststoffrecycling und Konfektionierung aus einer Hand.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/leaflet/leaflet.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="nav-logo" href="index.html" aria-label="BO-WERT GmbH – Startseite">
+      <img src="assets/logo-mark.svg" alt="BO-WERT GmbH Logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#ueber-uns">Über uns</a></li>
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#standorte">Standorte</a></li>
+      <li><a href="#karriere">Karriere</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a href="#kontakt" class="nav-cta">Anfrage senden</a>
+    <button class="burger" id="burger-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menü öffnen">
+      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="#ueber-uns">Über uns</a>
+    <a href="#leistungen">Leistungen</a>
+    <a href="#standorte">Standorte</a>
+    <a href="#karriere">Karriere</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#kontakt" class="mobile-cta">Anfrage senden</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-flow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">Oldenburg in Holstein</p>
+    <h1>Vom Wertstoff <span>zur Wertschöpfung.</span></h1>
+    <p class="lead">BO-WERT GmbH hat freie Lagerkapazitäten in Oldenburg in Holstein — für einzelne Euro- oder Industriepaletten ebenso wie für ganze Warenströme. Auf Wunsch übernehmen wir das komplette Handling sowie den Transport zu und von Ihrem Standort. Dazu: Kunststoffrecycling und Konfektionierung aus einer Hand.</p>
+    <div class="hero-ctas">
+      <a href="#kontakt" class="btn btn-primary">Lagerkapazität anfragen</a>
+      <a href="#leistungen" class="btn btn-ghost">Leistungen ansehen</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">9.000+</div>
+        <div class="stat-label">Palettenstellplätze</div>
+      </div>
+      <div>
+        <div class="stat-num">Frei</div>
+        <div class="stat-label">Lagerkapazitäten verfügbar</div>
+      </div>
+      <div>
+        <div class="stat-num">Inkl.</div>
+        <div class="stat-label">Handling &amp; Transport</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="ueber-uns">
+  <div class="wrap about-grid">
+    <div class="about-photo">
+      <img src="assets/Lager1.jpg" alt="Blick in einen Lagergang der BO-WERT GmbH mit hohen Palettenregalen">
+    </div>
+    <div class="about-text">
+      <p class="eyebrow" style="color:var(--green-dark)">Über uns</p>
+      <h2 style="color:var(--anthracite-dark); font-size:2.2rem; margin:0 0 18px;">Ein Team, vier Standbeine, eine Handschrift</h2>
+      <p>BO-WERT GmbH ist seit 2006 als GmbH ein familiär geführtes Logistikunternehmen aus Oldenburg in Holstein mit freien Lagerkapazitäten für Palettenware. Wir denken Lagerlogistik, Transport und Wertstoffkreisläufe zusammen — pragmatisch, zuverlässig und mit kurzen Wegen.</p>
+      <p>Ob die kurzfristige Einlagerung einzelner Paletten, die dauerhafte Lagerung ganzer Warenströme auf Euro- oder Industriepaletten oder die passgenaue Konfektionierung für Ihre Kunden: Auf Wunsch übernehmen wir für Sie das komplette Handling und den Transport zu und von Ihrem Standort.</p>
+      <ul class="about-facts">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Seit 2006 als GmbH am Markt</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Rund 9.000 Palettenstellplätze — aktuell mit freien Kapazitäten für Ihre Ware</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Lagerung von Euro- und Industriepaletten inklusive Handling</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Eigener Fuhrpark für Transporte zu und von Ihrem Lagerstandort</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Kunststoffrecycling mit klarem Fokus auf Wiederverwertung</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="leistungen">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Leistungen</p>
+      <h2>Was wir für Sie bewegen</h2>
+      <p>Vier Bereiche, die ineinandergreifen — einzeln buchbar oder als Gesamtlösung. Aktuell mit freien Lagerkapazitäten für Ihre Ware.</p>
+    </div>
+  </div>
+  <div class="wrap" style="padding:0 28px;">
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18M9 4v16M15 4v16" stroke="currentColor" stroke-width="1.8"/></svg></div>
+        <h3>Lager</h3>
+        <p>Freie Lagerkapazitäten auf rund 9.000 Palettenstellplätzen — für einzelne Euro- oder Industriepaletten ebenso wie für ganze Warenströme. Auf Wunsch inklusive Handling und Transport zu und von Ihrem Standort.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 7h11v10H3z" stroke="currentColor" stroke-width="1.8"/><path d="M14 10h4l3 3v4h-7z" stroke="currentColor" stroke-width="1.8"/><circle cx="7" cy="19" r="1.6" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="19" r="1.6" stroke="currentColor" stroke-width="1.6"/></svg></div>
+        <h3>Logistik</h3>
+        <p>Lokale und regionale Transporte zu und von unserem Lager, zuverlässig geplant und pünktlich umgesetzt.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="8" width="16" height="12" rx="1" stroke="currentColor" stroke-width="1.8"/><path d="M8 8V6a4 4 0 018 0v2" stroke="currentColor" stroke-width="1.8"/></svg></div>
+        <h3>Konfektionierung</h3>
+        <p>Verpackung, Umverpackung und individuelle Zusammenstellung für Ihre Auslieferung.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z" stroke="currentColor" stroke-width="1.8"/><path d="M12 11v9M4 6.5L12 11l8-4.5" stroke="currentColor" stroke-width="1.8"/></svg></div>
+        <h3>Recycling</h3>
+        <p>Aufbereitung und Wiederverwertung von Kunststoffen — für geschlossene Materialkreisläufe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="flow">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Der Weg des Materials</p>
+      <h2>Von der Anlieferung bis zur Auslieferung</h2>
+      <p>So durchläuft eine Palette bei uns den Betrieb — jeder Schritt greift in den nächsten.</p>
+    </div>
+    <div class="flow-row">
+      <div class="flow-step">
+        <div class="flow-num">01</div>
+        <h3>Anlieferung</h3>
+        <p>Waren und Wertstoffe kommen bei uns an.</p>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">02</div>
+        <h3>Wareneingangskontrolle</h3>
+        <p>Menge und Zustand der Ware werden geprüft und dokumentiert.</p>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">03</div>
+        <h3>Einlagerung</h3>
+        <p>Sichere Lagerung auf rund 9.000 Palettenplätzen — aktuell mit freien Kapazitäten.</p>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">04</div>
+        <h3>Bestellung</h3>
+        <p>Kunden bestellen vormittags — und bekommen die benötigten Paletten wenige Stunden später von unserem Transport angeliefert.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="locations" id="standorte">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Standorte</p>
+      <h2>Drei Standorte, kurze Wege</h2>
+      <p>Lager, Umschlag und Konfektionierung an drei Standorten in Oldenburg in Holstein und Heiligenhafen.</p>
+    </div>
+    <div class="locations-map" id="locations-map" role="img" aria-label="Karte mit den drei Standorten der BO-WERT GmbH"></div>
+    <div class="locations-grid">
+      <div class="location-card">
+        <h3>Im Dreieck 4–6</h3>
+        <address>Im Dreieck 4–6<br>23758 Oldenburg in Holstein</address>
+      </div>
+      <div class="location-card">
+        <h3>Sebenter Weg 31</h3>
+        <address>Sebenter Weg 31<br>23758 Oldenburg in Holstein</address>
+      </div>
+      <div class="location-card">
+        <h3>Dazendorfer Weg 50</h3>
+        <address>Dazendorfer Weg 50<br>23774 Heiligenhafen</address>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="career" id="karriere">
+  <div class="wrap">
+    <div class="career-inner">
+      <div>
+        <p class="eyebrow" style="color:var(--green-dark)">Karriere</p>
+        <h2>Verstärkung für unsere Konfektionierung gesucht</h2>
+        <p>Für unsere Konfektionierung suchen wir ab sofort Verstärkung (m/w/d) — täglich von 7:00 bis 13:30 Uhr, als Minijob oder Teilzeit bis 30 Stunden pro Woche. Die Arbeitstage sind flexibel und individuell planbar, im Rahmen von Montag bis Freitag. Wir bieten faire Arbeitsbedingungen und familiengerechte Arbeitszeiten. Bewerbungen von Frauen sind uns besonders willkommen.</p>
+      </div>
+      <a href="stellenangebot.html" class="btn btn-primary">Jetzt bewerben</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="kontakt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Kontakt</p>
+      <h2>Sprechen Sie mit uns</h2>
+      <p>Ob Anfrage, Bewerbung oder Kooperation — wir melden uns zeitnah zurück.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-block">
+          <h3>Adresse</h3>
+          <address>BO-WERT GmbH<br>Im Dreieck 4–6<br>23758 Oldenburg in Holstein</address>
+        </div>
+        <div class="contact-block">
+          <h3>Telefon</h3>
+          <p><a href="tel:+4917643674595">0176 43674595</a></p>
+        </div>
+        <div class="contact-block">
+          <h3>E-Mail</h3>
+          <p><a href="mailto:steffen@kastian.de">steffen@kastian.de</a></p>
+        </div>
+        <div class="contact-block">
+          <h3>Öffnungszeiten</h3>
+          <p>Montag – Freitag: 7:00 – 14:00 Uhr</p>
+        </div>
+      </div>
+
+      <form id="contact-form" autocomplete="on">
+        <div class="form-row">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div>
+          <label for="betreff">Betreff</label>
+          <select id="betreff" name="betreff">
+            <option>Allgemeine Anfrage</option>
+            <option>Angebot Logistik / Transport</option>
+            <option>Recycling / Wertstoffe</option>
+            <option>Lagerung</option>
+            <option>Konfektionierung</option>
+            <option>Bewerbung / Karriere</option>
+          </select>
+        </div>
+        <div>
+          <label for="nachricht">Nachricht</label>
+          <textarea id="nachricht" name="nachricht" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="justify-self:start;">Nachricht senden</button>
+        <p class="form-note">Ihre Anfrage geht direkt an steffen@kastian.de.</p>
+        <p class="form-status" id="form-status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-logo">
+      <img src="assets/logo-footer.svg" alt="BO-WERT GmbH">
+    </div>
+    <ul class="footer-links">
+      <li><a href="#ueber-uns">Über uns</a></li>
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#standorte">Standorte</a></li>
+      <li><a href="#karriere">Karriere</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+      <li><a href="datenschutz.html">Datenschutz</a></li>
+    </ul>
+  </div>
+  <div class="wrap footer-bottom">
+    © <span id="year"></span> BO-WERT GmbH · Im Dreieck 4–6 · 23758 Oldenburg in Holstein
+  </div>
+</footer>
+
+<script src="assets/leaflet/leaflet.js"></script>
+<script src="assets/map.js"></script>
+<script src="assets/main.js"></script>
+
+</body>
+</html>
