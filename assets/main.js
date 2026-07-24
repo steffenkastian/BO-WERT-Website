@@ -46,7 +46,7 @@ if (form) {
         throw new Error('Senden fehlgeschlagen');
       }
     } catch (err) {
-      status.textContent = 'Senden ist gerade nicht möglich. Bitte kontaktieren Sie uns direkt per E-Mail an steffen@kastian.de.';
+      status.textContent = 'Senden ist gerade nicht möglich. Bitte kontaktieren Sie uns direkt per E-Mail an info@bowert-gmbh.de.';
       status.className = 'form-status err';
     }
   });
