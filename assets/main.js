@@ -51,3 +51,41 @@ if (form) {
     }
   });
 }
+
+// Teilen-Button: nutzt die native Teilen-Funktion des Geräts,
+// sonst wird der Link in die Zwischenablage kopiert.
+document.querySelectorAll('[data-share]').forEach(function (btn) {
+  const status = document.querySelector('[data-share-status]');
+
+  function showStatus(text) {
+    if (!status) return;
+    status.textContent = text;
+    window.setTimeout(function () {
+      if (status.textContent === text) status.textContent = '';
+    }, 4000);
+  }
+
+  btn.addEventListener('click', async function () {
+    const data = {
+      title: btn.dataset.shareTitle || document.title,
+      text: btn.dataset.shareText || '',
+      url: window.location.href
+    };
+
+    if (navigator.share) {
+      try {
+        await navigator.share(data);
+        return;
+      } catch (err) {
+        if (err && err.name === 'AbortError') return;
+      }
+    }
+
+    try {
+      await navigator.clipboard.writeText(data.url);
+      showStatus('Link kopiert — jetzt einfach einfügen und weitergeben.');
+    } catch (err) {
+      showStatus('Link zum Kopieren: ' + data.url);
+    }
+  });
+});
